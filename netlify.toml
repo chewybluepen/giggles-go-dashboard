@@ -1,5 +1,5 @@
 [build]
-  command   = "pnpm run build"      # or "npm run build" if you prefer npm
+  command   = "pnpm run build"      # Enhanced Giggles Go Dashboard build
   publish   = ".netlify/output"      # where the plugin will emit your static assets
   functions = ".netlify/functions"   # where the plugin will emit your SSR/Edge functions
 
