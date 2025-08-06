@@ -10,34 +10,48 @@
 
 @layer base {
   :root {
+    /* Guyanese Cultural Color Palette - Golden Arrowhead Flag Inspired */
+    --guyana-green: 142 76% 36%;
+    --guyana-white: 0 0% 100%;
+    --guyana-black: 0 0% 8%;
+    --guyana-red: 0 84% 60%;
+    --guyana-yellow: 45 93% 58%;
+
+    /* Cultural Accent Colors */
+    --tropical-teal: 174 72% 56%;
+    --sunset-orange: 24 95% 53%;
+    --forest-emerald: 152 81% 29%;
+    --golden-amber: 43 96% 56%;
+
+    /* Base Theme Variables */
     --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
+    --foreground: var(--guyana-black);
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
+    --card-foreground: var(--guyana-black);
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
+    --popover-foreground: var(--guyana-black);
+    --primary: var(--guyana-green);
+    --primary-foreground: var(--guyana-white);
+    --secondary: 142 20% 96%;
+    --secondary-foreground: var(--guyana-black);
+    --muted: 142 15% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: var(--tropical-teal);
+    --accent-foreground: var(--guyana-white);
+    --destructive: var(--guyana-red);
+    --destructive-foreground: var(--guyana-white);
+    --border: 142 20% 89%;
+    --input: 142 20% 89%;
+    --ring: var(--guyana-green);
+    --chart-1: var(--guyana-green);
+    --chart-2: var(--tropical-teal);
+    --chart-3: var(--sunset-orange);
+    --chart-4: var(--golden-amber);
+    --chart-5: var(--forest-emerald);
+    --radius: 0.75rem;
+    --sidebar-background: 142 25% 98%;
+    --sidebar-foreground: var(--guyana-black);
+    --sidebar-primary: var(--guyana-green);
     --sidebar-primary-foreground: 0 0% 98%;
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
@@ -45,39 +59,92 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Dark Theme with Guyanese Cultural Accents */
+    --background: 0 0% 6%;
+    --foreground: var(--guyana-white);
+    --card: 0 0% 8%;
+    --card-foreground: var(--guyana-white);
+    --popover: 0 0% 8%;
+    --popover-foreground: var(--guyana-white);
+    --primary: var(--guyana-green);
+    --primary-foreground: var(--guyana-white);
+    --secondary: 142 15% 15%;
+    --secondary-foreground: var(--guyana-white);
+    --muted: 142 10% 15%;
+    --muted-foreground: 0 0% 65%;
+    --accent: var(--tropical-teal);
+    --accent-foreground: var(--guyana-white);
+    --destructive: var(--guyana-red);
+    --destructive-foreground: var(--guyana-white);
+    --border: 142 15% 18%;
+    --input: 142 15% 18%;
+    --ring: var(--guyana-green);
+    --chart-1: var(--guyana-green);
+    --chart-2: var(--tropical-teal);
+    --chart-3: var(--sunset-orange);
+    --chart-4: var(--golden-amber);
+    --chart-5: var(--forest-emerald);
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 0 0% 65%;
+    --sidebar-primary: var(--guyana-green);
+    --sidebar-primary-foreground: var(--guyana-white);
+    --sidebar-accent: var(--tropical-teal);
+    --sidebar-accent-foreground: var(--guyana-white);
+    --sidebar-border: 142 15% 18%;
+    --sidebar-ring: var(--guyana-green);
   }
+}
+
+/* Guyanese Cultural Patterns and Animations */
+@keyframes guyanese-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes tropical-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes flag-wave {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  25% { transform: translateX(2px) rotate(1deg); }
+  75% { transform: translateX(-2px) rotate(-1deg); }
+}
+
+.guyanese-gradient {
+  background: linear-gradient(135deg,
+    hsl(var(--guyana-green)) 0%,
+    hsl(var(--tropical-teal)) 25%,
+    hsl(var(--golden-amber)) 50%,
+    hsl(var(--sunset-orange)) 75%,
+    hsl(var(--guyana-red)) 100%);
+}
+
+.cultural-pattern {
+  background-image:
+    radial-gradient(circle at 25% 25%, hsl(var(--guyana-yellow) / 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, hsl(var(--tropical-teal) / 0.1) 0%, transparent 50%);
+}
+
+.shimmer-effect {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    hsl(var(--guyana-yellow) / 0.4),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: guyanese-shimmer 2s infinite;
+}
+
+.tropical-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tropical-hover:hover {
+  animation: tropical-pulse 0.6s ease-in-out;
+  box-shadow: 0 10px 25px hsl(var(--guyana-green) / 0.2);
 }
 
 @layer base {
@@ -86,5 +153,6 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 }

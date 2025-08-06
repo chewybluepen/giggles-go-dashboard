@@ -13,6 +13,18 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
+  			// Guyanese Cultural Colors
+  			'guyana-green': 'hsl(var(--guyana-green))',
+  			'guyana-white': 'hsl(var(--guyana-white))',
+  			'guyana-black': 'hsl(var(--guyana-black))',
+  			'guyana-red': 'hsl(var(--guyana-red))',
+  			'guyana-yellow': 'hsl(var(--guyana-yellow))',
+  			'tropical-teal': 'hsl(var(--tropical-teal))',
+  			'sunset-orange': 'hsl(var(--sunset-orange))',
+  			'forest-emerald': 'hsl(var(--forest-emerald))',
+  			'golden-amber': 'hsl(var(--golden-amber))',
+
+  			// Base Theme Colors
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -85,11 +97,42 @@ const config: Config = {
   				to: {
   					height: '0'
   				}
+  			},
+  			'guyanese-shimmer': {
+  				'0%': { backgroundPosition: '-200% 0' },
+  				'100%': { backgroundPosition: '200% 0' }
+  			},
+  			'tropical-pulse': {
+  				'0%, 100%': { transform: 'scale(1)' },
+  				'50%': { transform: 'scale(1.05)' }
+  			},
+  			'flag-wave': {
+  				'0%, 100%': { transform: 'translateX(0) rotate(0deg)' },
+  				'25%': { transform: 'translateX(2px) rotate(1deg)' },
+  				'75%': { transform: 'translateX(-2px) rotate(-1deg)' }
+  			},
+  			'slide-in-right': {
+  				'0%': { transform: 'translateX(100%)', opacity: '0' },
+  				'100%': { transform: 'translateX(0)', opacity: '1' }
+  			},
+  			'slide-in-left': {
+  				'0%': { transform: 'translateX(-100%)', opacity: '0' },
+  				'100%': { transform: 'translateX(0)', opacity: '1' }
+  			},
+  			'fade-in-up': {
+  				'0%': { transform: 'translateY(20px)', opacity: '0' },
+  				'100%': { transform: 'translateY(0)', opacity: '1' }
   			}
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+  			'guyanese-shimmer': 'guyanese-shimmer 2s infinite',
+  			'tropical-pulse': 'tropical-pulse 0.6s ease-in-out',
+  			'flag-wave': 'flag-wave 3s ease-in-out infinite',
+  			'slide-in-right': 'slide-in-right 0.3s ease-out',
+  			'slide-in-left': 'slide-in-left 0.3s ease-out',
+  			'fade-in-up': 'fade-in-up 0.4s ease-out'
   		}
   	}
   },
